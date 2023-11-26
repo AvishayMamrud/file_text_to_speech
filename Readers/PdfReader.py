@@ -6,5 +6,5 @@ def readPDF(file_path):
     clean_text = ''
     for page in pdf_reader.pages:
         text = page.extract_text()
-        clean_text += text.strip().replace('\n', ' ')
+        clean_text += text.strip()
     return clean_text
